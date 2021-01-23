@@ -33,19 +33,32 @@ console.log("Total Gadgets Cost Is =", numbersOfItems);
 // 3. hotelCost Total Hotel Cost //
 
 function hotelCost (days) {
-  let totalCost;
+  let totalCost = 0;
   if (days <= 10) {
-      totalCost = 100 * days;
+      // total cost is here
+      totalCost = days * 100;
   } else if (days <= 20) {
-      totalCost = 80 * days;
+      // store (1-10) days cost
+      let firstTen = 10 * 100;
+      let remaining = days - 10;
+      let secondTen = remaining * 80;
+      // total cost is here
+      totalCost = firstTen + secondTen;
   } else {
-      totalCost = 50 * days;
+      let firstTen = 10 * 100;
+      // store (11-20) days cost
+      let secondTen = 10 * 80;
+      let remaining = days - 20;
+      let thirdpart = remaining * 50;
+      // total cost is here
+      totalCost = firstTen + secondTen + thirdpart
   }
   return totalCost;
 }
 
-var totalHotelCost = hotelCost(17);
+var totalHotelCost = hotelCost(25);
 console.log("Total Hotel Cost is", totalHotelCost)
+
 
 
 // 4. megaFriend Find Array to longest word //
