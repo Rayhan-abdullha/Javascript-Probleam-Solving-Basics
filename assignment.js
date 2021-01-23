@@ -1,5 +1,3 @@
-// https://github.com/Rayhan-abdullha/Javascript-Probleam-Solvigng-Assignment-3
-
 
 // All Probleam Solving Here //
 
@@ -29,7 +27,7 @@ function budgetCalculator(watch, mobile, leptop) {
 }
 
 var numbersOfItems = budgetCalculator(2, 5, 2);
-console.log('Total Gadgets Cost Is =', numbersOfItems);
+console.log("Total Gadgets Cost Is =", numbersOfItems);
 
 
 // 3. hotelCost Total Hotel Cost //
@@ -46,8 +44,8 @@ function hotelCost (days) {
   return totalCost;
 }
 
-var totalHotelCost = hotelCost(20);
-console.log('Total Hotel Cost is', totalHotelCost)
+var totalHotelCost = hotelCost(17);
+console.log("Total Hotel Cost is", totalHotelCost)
 
 
 // 4. megaFriend Find Array to longest word //
@@ -62,5 +60,5 @@ function megaFriend(friendsName) {
   return maxWord;
 }
 
-var largeWord = megaFriend(['elon-musk', 'bill-gates', 'messi' , 'mark-zuckerberg', 'alienBoltu', 'sakib'])
-console.log(largeWord);
+var longestWord = megaFriend(["elon-musk", "bill-gates", "messi" , "mark-zuckerberg", "alienBoltu", "sakib"])
+console.log(longestWord);
